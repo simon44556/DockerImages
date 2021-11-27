@@ -6,7 +6,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-RUN apk add --no-cache --update curl ca-certificates openssl git tar fontconfig tzdata sqlite iproute2 \
+RUN apk add --no-cache --update curl ca-certificates openssl git tar fontconfig tzdata sqlite iproute2 bash \
     && adduser --disabled-password --home /home/container container
 
 RUN wget -P /etc/apk/keys/ \
